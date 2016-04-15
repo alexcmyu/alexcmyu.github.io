@@ -30,7 +30,7 @@ a {
   white-space: nowrap;
   top: 50%;
   margin-top: -2.5em;
-  padding-left: 32.5%;
+  padding-left: 20%;
 }
 
 #homeLogo {
@@ -94,3 +94,22 @@ a {
 
 
 /* My Work */
+
+
+
+
+
+/* Responsive - Home - Tablet */
+@media screen and (max-width: 1024px) {
+  #home h1 {
+    padding-left: 20%;
+  }
+}
+
+/* Responsive - Home - Mobile */
+@media screen and (max-width: 568px) {
+  #home h1 {
+    padding-left: 10%;
+    font-size: 1.3em;
+  }
+}
