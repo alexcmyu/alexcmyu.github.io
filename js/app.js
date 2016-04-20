@@ -21,61 +21,33 @@ event.preventDefault()
 //   }, 3000);
 // })
 
-
-setInterval(function(){
-  if(currentTitle === titles.length){
-    currentTitle = 0
-    // console.log('zero')
-    $('#adjOne').text(titles[currentTitle]);
-    currentTitle = currentTitle + 1
-  } else {
-    // console.log('else')
-    $('#adjOne').text(titles[currentTitle]);
-    currentTitle = currentTitle + 1
-  }
-
-}, 3000);
+  // Cycle down the array
+  setInterval(function(){
+    if(currentTitle === titles.length){
+      currentTitle = 0
+      $('#adjOne').text(titles[currentTitle]);
+      currentTitle = currentTitle + 1
+    } else {
+      $('#adjOne').text(titles[currentTitle]);
+      currentTitle = currentTitle + 1
+    }
+  }, 3000);
 
 
-$(document).ready(function(){
-  $('.aboutmeLink').on('click', function(){
-      $("#home").animate({'margin-top': 600}, 1000);
+
+  // Nav links, shifting divs
+  $(document).ready(function(){
+    $('.aboutmeLink').on('click', function(){
+        $('#home').animate({'margin-top': '90vh'}, 1000);
+    });
   });
-});
 
-$(document).ready(function(){
-  $('.workLink').on('click', function(){
-      // $("#mywork").animate({'margin-bottom': 600});
-      $('#home').animate({'margin-bottom': 600}, 1000);
+  $(document).ready(function(){
+    $('.workLink').on('click', function(){
+        $('#aboutme').css('display', 'none');
+        $('#home').animate({'top': '-90vh'}, 1000);
+    });
   });
-});
-
-
-// Home page nav links
-// $('.aboutmeLink').click(function(){
-//   $('#aboutme').css({
-//     'display':'block',
-//   })
-// })
-//
-// $('.aboutmeLink').click(function(){
-//   $('#home').css({
-//     'display':'none',
-//   })
-// })
-//
-// $('.workLink').click(function(){
-//   $('#mywork').css({
-//     'display':'block',
-//   })
-// })
-//
-// $('.workLink').click(function(){
-//   $('#home').css({
-//     'display':'none',
-//   })
-// })
-
 
 
 });
