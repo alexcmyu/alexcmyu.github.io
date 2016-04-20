@@ -11,16 +11,18 @@ a {
   color: white;
 }
 
-/* Home */
-
-#home {
+.block {
   height: 100vh;
   width: 100%;
   margin: 0 auto;
   position: relative;
-  background-color: #4a4b50;
 }
 
+/* Home */
+
+#home {
+  background-color: #4a4b50;
+}
 
 /* Home main text */
 #home h1 {
@@ -61,7 +63,6 @@ a {
   color: white;
 }
 
-
 .aboutmeLink {
   top: 2%;
 }
@@ -90,12 +91,17 @@ a {
 
 /* About Me */
 
+#aboutme {
+  display: none;
+}
 
 
 
 /* My Work */
 
-
+#mywork {
+  display: none;
+}
 
 
 
