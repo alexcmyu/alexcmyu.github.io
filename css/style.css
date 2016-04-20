@@ -18,13 +18,22 @@ a {
   position: relative;
 }
 
+body {
+  overflow: hidden;
+}
+
 /* Home */
 
 #home {
   background-color: #4a4b50;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 1000;
 }
 
 /* Home main text */
+
 #home h1 {
   line-height: 1.7em;
   font-size: 1.6em;
@@ -92,7 +101,7 @@ a {
 /* About Me */
 
 #aboutme {
-  display: none;
+  /*display: none;*/
 }
 
 
@@ -100,7 +109,7 @@ a {
 /* My Work */
 
 #mywork {
-  display: none;
+  /*display: none;*/
 }
 
 

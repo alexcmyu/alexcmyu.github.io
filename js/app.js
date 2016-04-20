@@ -37,29 +37,45 @@ setInterval(function(){
 }, 3000);
 
 
-$('.aboutmeLink').click(function(){
-  $('#aboutme').css({
-    'display':'block',
-  })
-})
+$(document).ready(function(){
+  $('.aboutmeLink').on('click', function(){
+      $("#home").animate({'margin-top': 600}, 1000);
+  });
+});
 
-$('.aboutmeLink').click(function(){
-  $('#home').css({
-    'display':'none',
-  })
-})
+$(document).ready(function(){
+  $('.workLink').on('click', function(){
+      // $("#mywork").animate({'margin-bottom': 600});
+      $('#home').animate({'margin-bottom': 600}, 1000);
+  });
+});
 
-$('.workLink').click(function(){
-  $('#mywork').css({
-    'display':'block',
-  })
-})
 
-$('.workLink').click(function(){
-  $('#home').css({
-    'display':'none',
-  })
-})
+// Home page nav links
+// $('.aboutmeLink').click(function(){
+//   $('#aboutme').css({
+//     'display':'block',
+//   })
+// })
+//
+// $('.aboutmeLink').click(function(){
+//   $('#home').css({
+//     'display':'none',
+//   })
+// })
+//
+// $('.workLink').click(function(){
+//   $('#mywork').css({
+//     'display':'block',
+//   })
+// })
+//
+// $('.workLink').click(function(){
+//   $('#home').css({
+//     'display':'none',
+//   })
+// })
+
 
 
 });
