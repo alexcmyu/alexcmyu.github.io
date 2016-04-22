@@ -22,22 +22,37 @@
     <div id="wrapper">
 
       <div id="aboutme" class="block">
-        <h2>about me</h2>
-          <h3>Hello,</h3>
-          <p>My name is Alex Yu and I am a web developer based in Los Angeles, California with a background in ad tech and digital media.</p>
-        <a href="#home">home</a>
-        <a href="#mywork">work</a>
+        <div id="aboutmeContent">
+          <div id="aboutmeText">
+
+            <h2>Alex Yu</h2>
+              <h3>
+                Web Developer,
+                <br>
+                Ad Tech,
+                <br>
+                and
+                <br>
+                Digital Media
+              </h3>
+                <h4>Hello,</h4>
+                <p>My name is Alex Yu and I am a web developer based in Los Angeles, California with a background in ad tech and digital media.</p>
+          </div>
+        </div>
+        <div id="aboutmeImage">
+
+        </div>
       </div>
 
       <div id="home" class="white block">
         <nav>
-          <!-- <a href="#" class="aboutmeLink link-nav transition white">home</a> -->
+          <a href="#" class="homeLink-top link-nav transition white hide">home</a>
           <a href="#" class="aboutmeLink link-nav transition white">about me</a>
-          <!-- <a href="#" class="aboutmeLink link-nav transition white">work</a> -->
+          <a href="#" class="workLink-top link-nav transition white hide">work</a>
 
-          <!-- <a href="#" class="aboutmeLink link-nav transition white">home</a> -->
+          <a href="#" class="homeLink-bottom link-nav transition white hide">home</a>
           <a href="#" class="workLink link-nav transition white">work</a>
-          <!-- <a href="#" class="aboutmeLink link-nav transition white">about me</a> -->
+          <a href="#" class="aboutmeLink-bottom link-nav transition white hide">about me</a>
         </nav>
         <h1>
           My name is <span id="homeLogo">Alex Yu.</span>
@@ -47,8 +62,6 @@
       </div>
 
       <div id="mywork" class="block">
-        <a href="#home">home</a>
-        <a href="#aboutme">about me</a>
         <h2>work</h2>
           <a href="#">Citipix</a>
           <a href="#">Relaxr</a>
