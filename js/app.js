@@ -37,69 +37,73 @@ event.preventDefault()
 
 // Nav links, shifting divs
   // top about me link
-  $(document).ready(function(){
     $('.aboutmeLink').on('click', function(){
       $('#home').animate({'top': '90vh'}, 1000);
+      $('.aboutmeLink').css('border', '2px solid white');
+      window.setTimeout(function(){
+        $('nav a').addClass('visible');
+      }, 1050);
     });
-  });
+
 
   // top home link
-  $(document).ready(function(){
     $('.homeLink-top').on('click', function(){
       $('#home').animate({'top': '0vh'}, 1000);
+      $('.aboutmeLink').css('border', 'none');
+      $('nav a').removeClass('visible');
     });
-  });
+
 
   // top work link
-  $(document).ready(function(){
     $('.workLink-top').on('click', function(){
+      window.setTimeout(function(){
+        $('#aboutme').css('display', 'none');
+      }, 400);
       $('#home').animate({'top': '-90vh'}, 800);
-      $('#aboutme').css('display', 'none'); // need to figure out delay, fade?
+      $('.aboutmeLink').css('border', 'none');
+      $('nav a').removeClass('visible');
+      window.setTimeout(function(){
+        $('nav a').addClass('visible');
+      }, 1050);
     });
-  });
+
 
   // bottom work link
-  $(document).ready(function(){
     $('.workLink').on('click', function(){
       $('#aboutme').css('display', 'none');
       $('#home').animate({'top': '-90vh'}, 1000);
+      $('.workLink').css('border', '2px solid white');
+      window.setTimeout(function(){
+        $('nav a').addClass('visible');
+      }, 1050);
     });
-  });
+
 
   // bottom home link
-  $(document).ready(function(){
     $('.homeLink-bottom').on('click', function(){
-      $('#aboutme').css('display', 'block'); // might need delay too
+      window.setTimeout(function(){
+        $('#aboutme').css('display', 'block');
+      }, 1100);
       $('#home').animate({'top': '0vh'}, 1000);
+      $('.workLink').css('border', 'none');
+      $('nav a').removeClass('visible');
     });
-  });
+
 
   // bottom about me link
-  $(document).ready(function(){
     $('.aboutmeLink-bottom').on('click', function(){
-      $('#aboutme').css('display', 'block'); // might need delay too
+      window.setTimeout(function(){
+        $('#aboutme').css('display', 'block');
+      }, 400);
       $('#home').animate({'top': '90vh'}, 800);
+      $('.workLink').css('border', 'none');
+      $('nav a').removeClass('visible');
+      window.setTimeout(function(){
+        $('nav a').addClass('visible');
+      }, 1050);
     });
-  });
+
 // end nav links
-
-  // $('#aboutme').visible('diplay', 'block');
-
-
-  var linksShown = true;
-
-  if (linksShown) {
-      $('nav a').addClass('visible');
-      $('nav a').removeClass('hide');
-  };
-
-
-
-
-
-
-
-
 
 
 
