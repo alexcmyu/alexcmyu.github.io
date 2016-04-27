@@ -86,7 +86,12 @@ event.preventDefault()
   // $('#aboutme').visible('diplay', 'block');
 
 
+  var linksShown = true;
 
+  if (linksShown) {
+      $('nav a').addClass('visible');
+      $('nav a').removeClass('hide');
+  };
 
 
 

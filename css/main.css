@@ -18,9 +18,18 @@ a {
   position: relative;
 }
 
+.visible {
+  visibility: visible;
+}
+
+.hide {
+  visibility: hidden;
+}
+
 body {
   overflow: hidden;
 }
+
 
 /* Home */
 
@@ -100,7 +109,6 @@ body {
   bottom: 4%;
 }
 
-
 .transition {
   opacity: 1;
   visibility: visible;
@@ -121,13 +129,11 @@ body {
 .workLink-top {
   top: 2%;
   left: 60%;
-  display: none;
 }
 
 .homeLink-top {
   top: 2%;
   left: 40%;
-  display: none;
 }
 
 #aboutmeContent {
@@ -170,20 +176,18 @@ body {
 
 /* My Work */
 
-#mywork {
+#mywork img {
 
 }
 
 .aboutmeLink-bottom {
   bottom: 2%;
   left: 60%;
-  display: none;
 }
 
 .homeLink-bottom {
   bottom: 2%;
   left: 40%;
-  display: none;
 }
 
 
