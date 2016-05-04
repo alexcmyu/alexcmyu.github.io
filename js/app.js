@@ -1,4 +1,4 @@
-var titles = [ 'ad tech ninja', 'kung-fu master', 'hardcore gamer', 'dog lover', 'hard-ish worker', 'front-end wizard', 'freestyle dancer', 'Chandler Bing', 'Golden State Warrior', 'Triton',  ]
+var titles = [ 'front-end wizard', 'ad tech ninja', 'kung-fu master', 'hardcore gamer', 'dog lover', 'hard-ish worker', 'freestyle dancer', 'Chandler Bing', 'Golden State Warrior', 'Triton', 'cool cat' ]
 var currentTitle = 0
 
 $(document).ready(function() {
@@ -31,7 +31,7 @@ event.preventDefault()
       $('#adjOne').text(titles[currentTitle]);
       currentTitle = currentTitle + 1
     }
-  }, 3000);
+  }, 2000);
 
 
 

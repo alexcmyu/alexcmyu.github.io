@@ -140,14 +140,14 @@ body {
 
 .workLink-top {
   top: 2%;
-  left: 60%;
+  left: 65%;
   opacity: 0;
   transition: all 1s ease;
 }
 
 .homeLink-top {
   top: 2%;
-  left: 40%;
+  left: 35%;
   opacity: 0;
   transition: all 1s ease;
 }
@@ -165,9 +165,6 @@ body {
   padding-top: 3em;
 }
 
-#aboutmeText {
-
-}
 
 #aboutmeText h2 {
   color: red;
@@ -203,14 +200,14 @@ body {
 
 .aboutmeLink-bottom {
   bottom: 2%;
-  left: 60%;
+  left: 65%;
   opacity: 0;
   transition: all 1s ease;
 }
 
 .homeLink-bottom {
   bottom: 2%;
-  left: 40%;
+  left: 35%;
   opacity: 0;
   transition: all 1s ease;
 }
@@ -222,7 +219,7 @@ body {
 
 .carousel-inner img {
   margin: 0 auto;
-  height: 70vh !important;
+  height: 65vh !important;
 }
 
 .carousel-caption {
@@ -239,6 +236,19 @@ body {
   background-color: white;
 }
 
+/* Nav links responsive */
+@media screen and (max-width: 1076px) {
+  #home h1 {
+    padding-left: 30%;
+  }
+
+  #homeImage {
+    height: 50vh;
+    top: 10%;
+    left: 25%;
+  }
+}
+
 
 /* Responsive - Home - Tablet */
 @media screen and (max-width: 843px) {
@@ -250,6 +260,24 @@ body {
     height: 50vh;
     top: 10%;
     left: 25%;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  .aboutmeLink-bottom {
+    left: 70%;
+  }
+
+  .homeLink-bottom {
+    left: 30%;
+  }
+
+  .workLink-top {
+    left: 70%;
+  }
+
+  .homeLink-top {
+    left: 30%;
   }
 }
 
@@ -270,6 +298,54 @@ body {
   }
 
   #homeImage {
+    left: 20%;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  .aboutmeLink-bottom {
+    bottom: 1%;
+    left: 70%;
+  }
+
+  .homeLink-bottom {
+    bottom: 1%;
+    left: 30%;
+  }
+
+  .workLink-top {
+    top: 1%;
+    left: 70%;
+  }
+
+  .homeLink-top {
+    top: 1%;
+    left: 30%;
+  }
+
+  .aboutmeLink {
+    top: 1%;
+  }
+
+  .workLink {
+    bottom: 1%;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  .aboutmeLink-bottom {
+    left: 80%;
+  }
+
+  .homeLink-bottom {
+    left: 20%;
+  }
+
+  .workLink-top {
+    left: 80%;
+  }
+
+  .homeLink-top {
     left: 20%;
   }
 }
