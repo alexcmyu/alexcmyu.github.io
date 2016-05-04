@@ -36,14 +36,14 @@ body {
 /* Home */
 
 #home {
-  background-color: #4a4b50;
+  background-color: #fec357;
   top: 0;
   left: 0;
   position: absolute;
   z-index: 1000;
 }
 
-/* Home main text */
+/* Home main */
 
 #home h1 {
   line-height: 1.7em;
@@ -60,6 +60,11 @@ body {
   font-size: 1.6em;
   font-weight: 800;
   color: #591b19;
+}
+
+#homeImage {
+  float: right;
+  height: 50vh;
 }
 
 
@@ -93,10 +98,10 @@ body {
   color: white;
 }
 
-#home a:focus {
+/*#home a:focus {
   text-decoration: none;
   color: white;
-}
+}*/
 
 .aboutmeLink {
   top: 2%;
@@ -216,6 +221,20 @@ body {
 .carousel-inner img {
   margin: 0 auto;
   height: 70vh !important;
+}
+
+.carousel-caption {
+  color: red;
+  font-size: 1.5em;
+  font-weight: 800;
+}
+
+.carousel-indicators li {
+  border: 1px solid black;
+}
+
+.carousel-indicators .active {
+  background-color: white;
 }
 
 
